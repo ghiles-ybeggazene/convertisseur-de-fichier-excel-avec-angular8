@@ -1,0 +1,37 @@
+
+
+<div class="container">   
+
+  
+    <div class="card">
+        <h2 class="card-header text-center ">upload fichier {{name}}</h2>
+        <div class="card-body ">
+
+  <div class="row">    
+    <div class="col-md-8 form-group">    
+      <input type="file" class="form-control" (change)="uploadedFile($event)" placeholder="Upload file" accept=".xlsx">    
+    </div>    
+  </div>   
+  
+</div> 
+</div> 
+
+
+  <div class="row"> 
+      <div class="col-md-2 form-group">    
+          <h1>telecharger le fichier converti </h1>
+        </div>  
+    <div class="col-md-2 form-group row ">    
+      <button type="button" class="btn btn-info" (click)="readAsCSV()">Ouvrir en CSV</button>    
+    </div>    <br>
+    <div class="col-md-2 form-group row ">    
+      <button type="button" class="btn btn-info" (click)="readAsJson()">Ouvrir en JSON</button>    
+    </div>    <br>
+    <div class="col-md-2 form-group row">    
+      <button type="button" class="btn btn-info" (click)="readAsHTML()">Ouvrir en HTML</button>    
+    </div>    <br>
+    <div class="col-md-2 form-group">    
+      <button type="button" class="btn btn-primary" (click)="readAsText()">Ouvrir en Text</button>    
+    </div>    
+  </div>    
+</div>     
